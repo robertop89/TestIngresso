@@ -48,21 +48,22 @@ public class prova {
 			System.out.println(mat.getId()+" "+mat.getNome());
 		} */
 	
-	/*TestAllenamento test = new TestAllenamento();
-	test = DAOFactory.caricaTest(2,2);
+	TestAllenamento test = new TestAllenamento();
+	test = TestAllenamentoFactory.caricaTest(1, 2);
 	System.out.println(test.getMateria());
 	for(int i=0;i<2;i++){
 		DomandaTest d = new DomandaTest();
 		d = test.getDomanda(i);
 		System.out.println(d.getId()+" "+d.getTesto()+" "+d.getRisp1()+" "+d.getRisp2());
-	}*/
-	Risposte risp = new Risposte();
+	}
+	System.out.println("Ciao");
+	/*Risposte risp = new Risposte();
 	List<Integer> d = new ArrayList<Integer>();
 	d.add(1);
 	d.add(4);
 	risp = RisposteFactory.CaricaRisposte(d);
 	System.out.println(risp.getIdDomanda(0)+" "+risp.getIndiceCorretta(0)+" "+risp.getMotivazione(0));
 	System.out.println(risp.getIdDomanda(1)+" "+risp.getIndiceCorretta(1)+" "+risp.getMotivazione(1));
-	
+	*/
 	}
 }
